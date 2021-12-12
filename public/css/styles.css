@@ -55,18 +55,27 @@ header {
 div.top-header {
   padding: 5%;
   display:flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  align-items:center;
+  gap: 40px;
+  padding-top: 2%;
+}
+
+header div.logo {
+  display:block;
+  width: 40%;
   justify-content: center;
 }
 .form{
-  width: 50%;
+  width: 25%;
   display: flex;
-}
-header div.logo {
-  display:block;
-  width: 50%;
+  justify-content: center;
+  gap: 5px;
 }
 
+.form .input{
+  width: 80%;
+}
 header nav {
   display: flex;
   font-size: var(--text-sm);
@@ -76,8 +85,12 @@ header nav {
 
 header ul  {
   list-style-type: none;
-  
-  
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: -4%;
+  padding: 0% 4%;
 }
 
 header ul li a {
@@ -222,6 +235,7 @@ article div.main-article{
   .description{
     display: none;
   }
+  
 }
 @media (min-width: 361px){
   
@@ -239,6 +253,9 @@ article div.main-article{
     max-width: 45%;
   }
 
+
+ 
+
 }
 @media (max-width: 769px){
 
@@ -248,7 +265,17 @@ article div.main-article{
   .nav{
     display: none;
   }
- 
+  div.top-header {
+    padding: 5%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .form{
+    width: 50%;
+    display: flex;
+  }
 }
 
 
