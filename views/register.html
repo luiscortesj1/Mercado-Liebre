@@ -41,14 +41,17 @@
             <img src="images/img-home-banner.jpg" alt="Banner de ofertas">
         </section>
         <main>
-           <form action="/register" method="get">
+           <form action="/register" method="post">
                <input type="text"name="name" placeholder="Nombres"> <br>
                <input type="text"name="lastname" placeholder="Apellidos"><br>
                <input type="text"name="username" placeholder="Nombre Usuari@"><br>
                <label for="data"><h3>Fecha de nacimiento</h3></label><br>
                <input type="date"name="data" placeholder="Fecha nacimiento"><br>
                <input type="text"name="direction" placeholder="Domicilio"><br>
-               <label for="">Perfil Del Usuario</label>
+               <label for="profileuser"><h3>Perfil Del Usuario<h3></h3></label>
+                <input type="radio" name="option" value="Vender">
+                <input type="radio" name="option" value="Comprar">
+               
             </form>
         </main>
   <footer>
