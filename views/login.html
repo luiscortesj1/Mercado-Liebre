@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/stylesLogin.css">
     </head>
     <body>
         <header>
@@ -37,43 +37,14 @@
                 <i class="fa fa-bars burger"></i>
             </div>
         </header>
-        <section class="banner">
-            <img src="images/img-home-banner.jpg" alt="Banner de ofertas">
-        </section>
-        <main>
-           <form action="/register" method="post">
-            <input type="text" name="name" placeholder="Nombres">
-            <input type="text" name="lastname" placeholder="Apellidos">
-            <input type="email"name="email" placeholder="E-mail">
-            <label for="birth_date"><b>Fecha de nacimiento</b></label>
-            <input type="date" name="birth_date">
-            <input type="text" name="address" placeholder="Domicilio">
-            <h4>Perfil del usuario</h4>
-            <div class="profile">
-                <input type="radio" name="profile" value="buy" id="buy"><label for="buy">Comprador</label>
-                <input type="radio" name="profile" value="sell" id="sell"><label for="sell">Vendedor</label>
-            </div>
-            <h4>Intereses</h4>
-            <div class="interests">
-                <input type="checkbox" name="interests" value="a" id="a">
-                    <label for="a">Electro</label>
-                <input type="checkbox" name="interests" value="b" id="b">
-                    <label for="b">Moda</label>
-                <input type="checkbox" name="interests" value="c" id="c">
-                    <label for="c">Hogar</label>
-                <input type="checkbox" name="interests" value="d" id="d">
-                <label for="d">Juguetería</label>
-                <input type="checkbox" name="interests" value="e" id="e">
-                    <label for="e">Vida sana</label>
-            </div>
-            <h4>Elegí tu foto de usuario</h4>
-            <input type="file" name="avatar">
-            <input type="password" name="pass" placeholder="Elegí tu contraseña">
-            <input type="password" name="pass_confirm" placeholder="Confirma tu contraseña">
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Borrar">
-
-            
+       
+        <main class="login">
+           <form action="/" method="post">
+                <div >
+                <input type="text"name="user" placeholder="Nombre de usuario" required>
+                <input type="password" name="pass" placeholder="Elegí tu contraseña"required>
+                <input type="submit" value="Enviar" class="btn-login">
+                </div>
             </form>
         </main>
   <footer>

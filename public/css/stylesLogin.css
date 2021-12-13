@@ -132,16 +132,17 @@ div.burger-menu i {
   border-radius: 5px;
 }
 
+
 section.banner img{
-  width: 100%;
-}
+    width: 100%;
+  }
 
 /* MAIN */
 /*FOOTER*/
 footer  {
     padding: 20px;
     text-align: center;
-    
+    background-color:var(--blanco)
   }
  
 footer article h2 {
@@ -168,95 +169,31 @@ footer article h2 {
 
 /*/FOOTER*/
 /*MAIN*/
-article div.main-article{
-  width: 100%;
+main form div{
+   
+   padding: 60px;
+   padding-top: 30px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   grid-gap: 30px;
 }
 
-.price{
-  font-size: 18px;
-}
+input{
 
-.discount,
-.description{
-  font-size: 16px;
-  font-weight: normal;
-}
-
-h3,
-.description{
-  color: #666;
-}
-
-main{
-    width: 90%;
-    margin: 0 auto;
-}
-main section article{
-    background-color: #fff;    
-    margin: 10px 0px;
-}
-main section article img{
-    width: 100%;
-}
-main section article i,
-.discount{
-    color: #39B54A;
-}
-main section article div i{
-    display:block;
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39B54A;
-    background-color: #FFF;
-    border-radius: 50%;
-    right: 45px;
-    position: absolute;
-    top: -15px;
-    
-    
-}
-main section h3{
-    margin: 20px 0px;
-}
-article div.main-article{
-    width: 100%;
-    border-top: 1px solid #EBEBEB;
-    padding: 15px;
-    position: relative;
-}
-.flex-row{
-  display: flex;
-  align-items: baseline;
-  gap: 10px;
-}
-@media (max-width: 361px){
-  .description{
-    display: none;
-  }
-  
-}
-@media (min-width: 361px){
-  
-  main section article{
-      box-shadow: 0px 0px 10px rgb(100, 100, 100);
-  }
-  .products{
-    display:flex;
-    flex-wrap:wrap;
-    gap: 10px;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  .products article{
-    max-width: 45%;
-  }
-
-
+ padding: 10px;
+ padding-bottom: 10px;
+ width: 70%;
+ border: var(--gris-claro);
+ border-radius: 10px;  
  
 
 }
+
+ .btn-login{
+    
+    background-color: var(--celeste) 
+ }
 @media (max-width: 769px){
 
   header nav ul {
