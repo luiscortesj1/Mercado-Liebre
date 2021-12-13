@@ -133,6 +133,9 @@ div.burger-menu i {
 }
 
 
+section.banner img{
+    width: 100%;
+  }
 
 /* MAIN */
 /*FOOTER*/
@@ -166,31 +169,48 @@ footer article h2 {
 
 /*/FOOTER*/
 /*MAIN*/
-main form div{
-   
-   padding: 60px;
-   padding-top: 30px;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   grid-gap: 30px;
+main form {
+  display: block;
 }
 
-input{
-
- padding: 10px;
- padding-bottom: 10px;
- width: 70%;
- border: var(--gris-claro);
- border-radius: 10px;  
- 
-
-}
-
- .btn-login{
+main form div {
+    padding: 60px;
+    padding-top: 30px;
+    display: grid;
+    flex-wrap: wrap;
+    grid-gap: 3px;
     
-    background-color: var(--celeste) 
- }
+    
+}
+main form div input {
+  padding: 11px;  
+  width: 50%;
+  display: flex;
+}
+main form div label b,h4 {
+  display:flex;
+  padding: 8px;
+}
+div .profile{
+  padding:1px;
+  display: flex;
+  
+}
+div .profile input{
+  display: flex;
+  flex-wrap: nowrap;
+  width: 10px;
+  padding:1px
+}
+
+div .interests{
+  display: flex;
+  flex-wrap: wrap;
+  padding:1px;
+  width: 20%;
+}
+
+
 @media (max-width: 769px){
 
   header nav ul {

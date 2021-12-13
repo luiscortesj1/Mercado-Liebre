@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/stylesRegister.css">
     </head>
     <body>
         <header>
@@ -37,17 +37,17 @@
                 <i class="fa fa-bars burger"></i>
             </div>
         </header>
-        <section class="banner">
-            <img src="images/img-home-banner.jpg" alt="Banner de ofertas">
-        </section>
+        
         <main>
            <form action="/register" method="post">
+            <div>
             <input type="text" name="name" placeholder="Nombres">
             <input type="text" name="lastname" placeholder="Apellidos">
             <input type="email"name="email" placeholder="E-mail">
             <label for="birth_date"><b>Fecha de nacimiento</b></label>
             <input type="date" name="birth_date">
             <input type="text" name="address" placeholder="Domicilio">
+            
             <h4>Perfil del usuario</h4>
             <div class="profile">
                 <input type="radio" name="profile" value="buy" id="buy"><label for="buy">Comprador</label>
@@ -73,7 +73,7 @@
             <input type="submit" value="Enviar">
             <input type="reset" value="Borrar">
 
-            
+        </div> 
             </form>
         </main>
   <footer>
