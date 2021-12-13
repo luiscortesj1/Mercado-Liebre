@@ -99,18 +99,23 @@ header ul li a {
   color: var(--negro);
 }
 
-header .form .input {
+header form input {
   background-color: var(--blanco);
   border: 1px solid var(--negro);
   color: var(--gris-oscuro);
   padding: 2px;
+  border: var(--gris-claro);
+  border-radius: 10px;  
+  width: 60%;
 }
 
-header .form .submit {
+header form button {
   background-color: var(--blanco);
   border: 1px solid var(--negro);
   width: 18px;
   padding: 2px;
+  border: var(--gris-claro);
+  border-radius: 3px;  
 }
 
 header div.top-header p {
@@ -186,6 +191,9 @@ main form div input {
   padding: 11px;  
   width: 50%;
   display: flex;
+  border: var(--gris-claro);
+ border-radius: 10px;  
+ 
 }
 main form div label b,h4 {
   display:flex;
@@ -209,7 +217,16 @@ div .interests{
   padding:1px;
   width: 20%;
 }
-
+div .btn {
+  display: flex;
+  
+}
+div .btn input{
+  display: flex;
+  width: 20%;
+  justify-content: center;
+ background-color: var(--celeste) 
+}
 
 @media (max-width: 769px){
 

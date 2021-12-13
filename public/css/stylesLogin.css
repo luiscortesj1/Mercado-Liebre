@@ -99,18 +99,23 @@ header ul li a {
   color: var(--negro);
 }
 
-header .form .input {
+header form input {
   background-color: var(--blanco);
   border: 1px solid var(--negro);
   color: var(--gris-oscuro);
   padding: 2px;
+  border: var(--gris-claro);
+  border-radius: 10px;  
+  width: 60%;
 }
 
-header .form .submit {
+header form button {
   background-color: var(--blanco);
   border: 1px solid var(--negro);
   width: 18px;
   padding: 2px;
+  border: var(--gris-claro);
+  border-radius: 3px;  
 }
 
 header div.top-header p {
