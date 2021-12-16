@@ -184,7 +184,8 @@ main form div {
     display: grid;
     flex-wrap: wrap;
     grid-gap: 3px;
-    
+    position: relative;
+    left: 20%;
     
 }
 main form div input {
@@ -198,10 +199,17 @@ main form div input {
 main form div label b,h4 {
   display:flex;
   padding: 8px;
+  font-size: medium;
 }
 div .profile{
-  padding:1px;
+ 
   display: flex;
+  padding: 11px;
+  display: flex;
+  position: relative;
+  left: 1%;
+  font-size: 13px;
+  align-items: center;
   
 }
 div .profile input{
@@ -211,15 +219,30 @@ div .profile input{
   padding:1px
 }
 
+
+
 div .interests{
   display: flex;
   flex-wrap: wrap;
   padding:1px;
   width: 20%;
+  position: relative;
+  left: -21px;
+  font-size: 13px;
+}
+
+div .interests label{
+  width: 30%;
+}
+div .interests label{
+  position: relative;
+  right: 38px;
+  bottom: 1px;
 }
 div .btn {
   display: flex;
-  
+  position: relative;
+  left: 1px;
 }
 div .btn input{
   display: flex;
