@@ -5,7 +5,7 @@ const path = require('path'); // funcion
 const publicPath = path.join(__dirname, 'public')// resolver ruta
 app.use(express.static(publicPath)); //traer los elementos public - recursos estaticos
 
-app.listen(3000, function() {
+app.listen(process.env.PORT ||3000, function() {
     console.log('Servidor corriendo en el puerto 3000')
 })
  
