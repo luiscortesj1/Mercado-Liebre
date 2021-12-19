@@ -146,9 +146,17 @@ section.banner img{
 footer  {
     padding: 20px;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 11%;
+    column-gap: 10%;
+    align-items:center;
     
   }
+  
  
+  
 footer article h2 {
     text-align: center;
     
@@ -181,11 +189,19 @@ article div.main-article{
   font-size: 18px;
 }
 
-.discount,
+.discount{
+  font-size: 16px;
+  font-weight: normal;
+  
+}
 .description{
   font-size: 16px;
   font-weight: normal;
+  transition: all 3s;
+  
 }
+
+
 
 h3,
 .description{
@@ -219,8 +235,11 @@ main section article div i{
     right: 45px;
     position: absolute;
     top: -15px;
+    transition:  transform 2s;
+}
     
-    
+main section article div i:hover {
+  transform: rotate(-90deg);
 }
 main section h3{
     margin: 20px 0px;
@@ -231,6 +250,13 @@ article div.main-article{
     padding: 15px;
     position: relative;
 }
+
+
+main section article:hover{
+  box-shadow: 0px 0px 10px rgb(100,100,100);
+}
+
+
 .flex-row{
   display: flex;
   align-items: baseline;
@@ -244,9 +270,7 @@ article div.main-article{
 }
 @media (min-width: 361px){
   
-  main section article{
-      box-shadow: 0px 0px 10px rgb(100, 100, 100);
-  }
+  
   .products{
     display:flex;
     flex-wrap:wrap;
@@ -263,7 +287,9 @@ article div.main-article{
 
 }
 @media (max-width: 769px){
-
+  main section article{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
   header nav ul {
     display: block;
   }
@@ -282,9 +308,6 @@ article div.main-article{
     display: flex;
   }
 }
-
-
-
 
 @media (min-width: 769px){
 
