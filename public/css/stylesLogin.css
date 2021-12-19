@@ -142,8 +142,14 @@ div.burger-menu i {
 /* MAIN */
 /*FOOTER*/
 footer  {
-    padding: 20px;
-    text-align: center;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 11%;
+  column-gap: 10%;
+  align-items:center;
     background-color:var(--blanco)
   }
  
