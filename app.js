@@ -8,7 +8,7 @@ app.use(express.static(publicPath)); //traer los elementos public - recursos est
 app.listen(3000, function() {
     console.log('Servidor corriendo en el puerto 3000')
 })
-
+ 
 
 app.get('/',(req,res)=>{
     res.sendFile(path.join(__dirname,'/views/home.html'));
